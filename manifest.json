@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Visual Bookshelf",
+  "version": "1.0.0",
+  "description": "Your local and Google Drive PDFs as a clean, organized grid with auto-save progress.",
+  "action": {
+    "default_title": "Open Visual Bookshelf"
+  },
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "identity"
+  ],
+  "oauth2": {
+    "client_id": "655962649451-5t5531jd7ioi5pqk3kln8onecfrflc2l.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.readonly",
+      "https://www.googleapis.com/auth/drive.file"
+    ]
+  }
+}

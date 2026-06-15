@@ -1,0 +1,12 @@
+{
+  "runs": [
+    {
+      "timestamp": "2026-06-15T09:02:35.211782+00:00",
+      "path": "C:\\Users\\poo\\.gemini\\antigravity\\scratch\\pdf_bookshelf_extension",
+      "input_tokens": 15000,
+      "output_tokens": 1000
+    }
+  ],
+  "total_input_tokens": 15000,
+  "total_output_tokens": 1000
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visual Bookshelf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="glass-header">
+        <div class="header-content">
+          <h1>Visual Bookshelf</h1>
+          <div class="actions">
+            <button id="add-single-book" class="btn secondary-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+            Add Single Book
+          </button>
+          <button id="add-local-folder" class="btn primary-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line></svg>
+            Add Local Folder
+          </button>
+            <button id="toggle-settings" class="btn secondary-btn" title="Cloud Sync Settings">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+              Settings
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <!-- Settings Panel -->
+        <div id="settings-panel" class="settings-panel hidden">
+          <div class="card">
+            <div class="card-header">
+              <h2>Cloud Sync</h2>
+              <span id="auth-status" class="status-badge error">Not Authenticated</span>
+            </div>
+            <div class="card-content">
+              <p class="description">Sync your reading progress safely to Google Drive using a hidden Application Data folder.</p>
+              
+              <div class="sync-mode">
+                <label>Sync Mode</label>
+                <div class="toggle-group">
+                  <button id="mode-auto" class="toggle-btn active">Auto</button>
+                  <button id="mode-manual" class="toggle-btn">Manual</button>
+                </div>
+              </div>
+
+              <div class="sync-actions">
+                <button id="sync-upload" class="action-btn outline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12"/></svg>
+                  Upload Progress (Local → Drive)
+                </button>
+                <button id="sync-download" class="action-btn outline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                  Download & Merge (Drive → Local)
+                </button>
+                <button id="sync-fetch-pdfs" class="action-btn outline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                  Fetch Drive PDFs
+                </button>
+                <button id="btn-clear-db" class="action-btn outline" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3);">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                  Clear Entire Library (Reset)
+                </button>
+              </div>
+
+              <div class="sync-footer">
+                <div class="last-synced" id="last-synced-text">Last Synced: Never</div>
+                <button id="btn-signout" class="text-btn danger hidden">Sign Out</button>
+                <button id="btn-signin" class="text-btn primary">Sign In with Google</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs hidden" id="breadcrumbs">
+          <button class="breadcrumb-item" id="breadcrumb-home">Bookshelf</button>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-item active" id="breadcrumb-current">Folder</span>
+          <button id="reload-folder-btn" class="btn secondary-btn" style="margin-left: auto; padding: 0.3rem 0.8rem; font-size: 0.85rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+            Reload Folder
+          </button>
+        </div>
+
+        <div id="bookshelf-grid" class="bookshelf-grid">
+          <!-- Book items will be injected here -->
+          <div class="empty-state" id="empty-state">
+            <div class="empty-icon">📚</div>
+            <h2>Your Bookshelf is Empty</h2>
+            <p>Add a local folder or connect Google Drive to start building your library.</p>
+          </div>
+        </div>
+      </main>
+
+      <!-- Loading Overlay -->
+      <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="spinner"></div>
+        <p id="loading-text">Processing PDFs...</p>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

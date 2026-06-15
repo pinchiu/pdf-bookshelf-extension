@@ -1,0 +1,404 @@
+{
+  "nodes": [
+    {
+      "id": "manifest_file",
+      "label": "Extension Manifest",
+      "file_type": "document",
+      "source_file": "manifest.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "package_config",
+      "label": "Package Configuration",
+      "file_type": "document",
+      "source_file": "package.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "vite_config",
+      "label": "Vite Configuration",
+      "file_type": "code",
+      "source_file": "vite.config.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "background_service_worker",
+      "label": "Background Service Worker",
+      "file_type": "code",
+      "source_file": "src/background.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "counter_module",
+      "label": "Counter Module",
+      "file_type": "code",
+      "source_file": "src/counter.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "db_module",
+      "label": "Database Module",
+      "file_type": "code",
+      "source_file": "src/db.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "main_ui_logic",
+      "label": "Main UI Logic",
+      "file_type": "code",
+      "source_file": "src/main.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_utils_module",
+      "label": "PDF Utils Module",
+      "file_type": "code",
+      "source_file": "src/pdf-utils.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "reader_logic",
+      "label": "Reader Logic",
+      "file_type": "code",
+      "source_file": "src/reader.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sync_module",
+      "label": "Sync Module",
+      "file_type": "code",
+      "source_file": "src/sync.js",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "index_page",
+      "label": "Index Page",
+      "file_type": "document",
+      "source_file": "index.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "reader_page",
+      "label": "Reader Page",
+      "file_type": "document",
+      "source_file": "reader.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "viewer_page",
+      "label": "PDF.js Viewer Page",
+      "file_type": "document",
+      "source_file": "public/pdfjs/web/viewer.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "viewer_script",
+      "label": "PDF.js Viewer Script",
+      "file_type": "code",
+      "source_file": "public/pdfjs/web/viewer.mjs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "debugger_script",
+      "label": "PDF.js Debugger Script",
+      "file_type": "code",
+      "source_file": "public/pdfjs/web/debugger.mjs",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "locale_config",
+      "label": "PDF.js Locale Config",
+      "file_type": "document",
+      "source_file": "public/pdfjs/web/locale/locale.json",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "sample_pdf",
+      "label": "Sample PDF Document",
+      "file_type": "paper",
+      "source_file": "public/pdfjs/web/compressed.tracemonkey-pldi-09.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "drive_sync_mechanism",
+      "label": "Google Drive Sync Mechanism",
+      "file_type": "rationale",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "local_storage_db",
+      "label": "IndexedDB Local Storage",
+      "file_type": "rationale",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "pdf_rendering_engine",
+      "label": "PDF Rendering Engine",
+      "file_type": "rationale",
+      "source_file": null,
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "main_ui_logic",
+      "target": "sync_module",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "main_ui_logic",
+      "target": "pdf_utils_module",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "reader_logic",
+      "target": "sync_module",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/reader.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "reader_logic",
+      "target": "viewer_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/reader.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "main_ui_logic",
+      "target": "reader_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "background_service_worker",
+      "target": "index_page",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/background.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "main_ui_logic",
+      "target": "db_module",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/main.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "reader_logic",
+      "target": "db_module",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/reader.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sync_module",
+      "target": "drive_sync_mechanism",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/sync.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "db_module",
+      "target": "local_storage_db",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/db.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "pdf_utils_module",
+      "target": "pdf_rendering_engine",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "src/pdf-utils.js",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "viewer_page",
+      "target": "pdf_rendering_engine",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "public/pdfjs/web/viewer.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "background_service_worker",
+      "target": "sync_module",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": null,
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "manifest_file",
+      "target": "background_service_worker",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "manifest.json",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "index_page",
+      "target": "main_ui_logic",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "index.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "reader_page",
+      "target": "reader_logic",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "reader.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "core_data_flow",
+      "label": "Core Data Flow",
+      "nodes": [
+        "main_ui_logic",
+        "reader_logic",
+        "db_module",
+        "sync_module"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": null
+    }
+  ],
+  "input_tokens": 15000,
+  "output_tokens": 1000
+}

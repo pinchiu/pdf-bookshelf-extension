@@ -1,0 +1,19 @@
+{
+  "name": "pdf_bookshelf_extension",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^2.0.0-beta.33",
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "dexie": "^4.4.3",
+    "pdfjs-dist": "^6.0.227"
+  }
+}
